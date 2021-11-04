@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: url(images/pexels-sebastiaan-stam-1482476.jpg);
+            background-size: 100%;
+
+        }
+        /* section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } */
+
+        .contanier {
+            display: flex;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+
+        .right {
+            height: 30px;
+            width: 60px;
+            position: relative;
+        }
+
+        .right h1 {
+            color: white;
+            text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff;
+            
+        }
+
+        .left {
+
+            height: 30px;
+            width: 350px;
+            overflow: hidden;
+
+
+        }
+
+        .left h1 {
+            animation: tedtalk 4s infinite alternate;
+            position: relative;
+            color: white;
+            text-shadow: 0 0 6px #00b3ff;
+            
+        }
+
+        @keyframes tedtalk {
+            0% {
+                top: 0px;
+
+            }
+
+            30% {
+                top: -25px;
+            }
+
+            70% {
+                top: -50px;
+            }
+
+            100% {
+                top: -80px;
+
+            }
+        }
+
+        .navbar {
+
+            display: flex;
+            justify-content: space-around;
+            width: 50vw;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 300;
+            font-size: 1rem;
+            text-shadow: 0 0 9px #00b3ff;
+        }
+      
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">help</a>
+        <a href="#">section</a>
+    </nav>
+    <section>
+        <div class="contanier">
+            <div class="right">
+                <h1>I M</h1>
+            </div>
+            <div class="left">
+                <h1>NARESH KUMAWAT</h1>
+                <h1>WEB DEVLOPER</h1>
+                <h1>PROGRAMMER</h1>
+                <h1>GAMER</h1>
+            </div>
+        </div>
+    </section>
+    
+        
+</body>
+
+</html>
